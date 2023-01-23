@@ -80,21 +80,19 @@ html {
 
 .header-title {
   width: 280px;
-  display: inline-block;
   font-size: var(--h1-size);
   color: var(--white);
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   line-height: var(--h1-height);
 }
 
 .header-subtitle {
   width: 280px;
-  display: inline-block;
   font-size: var(--p-size);
   font-weight: var(--weight-500);
   line-height: var(--p-height);
   color: var(--soft-orange);
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }
 
 .header-btn {
