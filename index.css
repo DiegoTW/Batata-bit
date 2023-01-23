@@ -1,0 +1,108 @@
+/* 
+1 - Posicionamiento
+2 - Modelo de Caja
+3 - Tipografía
+4 - Efectos Visuales
+5 - Otros
+*/
+
+/* Variables */
+:root {
+  /* Colores */
+  --linear-background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  --bitcoin-orange: #F7931A;
+  --soft-orange: #FFCD9F;
+  --secondary-blue: #1A9AF7;
+  --soft-blue: #E7F5FF;
+  --warm-black: #201E1C;
+  --warm-black1: #282623;
+  --grey: #BABABA;
+  --off-white: #FAF8F7;
+  --white: #FFFFFF;
+
+  /* Fonts */
+  --font-DmSans: 'DM Sans', sans-serif;
+  --font-Inter: 'Inter', sans-serif;
+
+  /* Sizes */
+  --textLogo-size: 2.6rem;
+  --h1-size: 2.4rem;
+  --h2-size: 1rem;
+  --h3-size: 1rem;
+  --p-size: 1.3rem;
+
+  /* Weights */
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-700: 700;
+
+  /* Heights */
+  --h1-height: 1;
+  --p-height: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-DmSans);
+}
+
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+  background: var(--linear-background);
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.logo-text {
+  font-size: var(--textLogo-size);
+  color: #F7931A;
+  font-weight: var(--weight-700);
+}
+
+.title {
+  font-size: var(--h1-size);
+  color: var(--white);
+  margin-bottom: 2rem;
+  line-height: var(--h1-height);
+}
+
+.subtitle {
+  font-size: var(--p-size);
+  font-weight: var(--weight-500);
+  line-height: var(--p-height);
+  color: var(--soft-orange);
+  margin-bottom: 2rem;
+}
+
+.header-btn {
+  background-color: var(--off-white);
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: .4rem;
+  box-shadow: 0 5px 5px 1px #28262322;
+  font-size: var(--p-size);
+  font-weight: var(--weight-700);
+  position: absolute;
+  bottom: -2rem;
+  left: 4rem;
+  right: -4rem;
+}
