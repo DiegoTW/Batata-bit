@@ -89,7 +89,8 @@ main {
 }
 
 .header-title,
-.exchange-title {
+.exchange-title,
+.benefits-title {
   width: 288px;
   font-size: var(--h1-size);
   color: var(--white);
@@ -98,7 +99,8 @@ main {
 }
 
 .header-subtitle,
-.exchange-subtitle {
+.exchange-subtitle,
+.benefits-subtitle {
   width: 288px;
   font-size: var(--p-size);
   font-weight: var(--weight-500);
@@ -122,7 +124,7 @@ main {
   right: -4rem;
 }
 
-.backgroundImg {
+.backgroundExchangeImg {
   width: 200px;
   height: 200px;
   margin: 0 auto 3rem;
@@ -145,7 +147,7 @@ main {
   width: 70%;
   min-width: 235px;
   max-width: 300px;
-  height: 360px;
+  height: 340px;
   margin: 0 auto;
   font-family: var(--font-Inter);
 }
@@ -191,4 +193,80 @@ main {
   font-size: 1.1rem;
   line-height: 1.6rem;
   padding: .8rem;
+}
+
+.main-benefits-container {
+  background-color: var(--warm-black);
+  width: 320px;
+  height: 880px;
+  position: relative;
+}
+
+.backgroundBenefitsImg {
+  width: 40px;
+  height: 24px;
+  position: absolute;
+  background-image: url('./Assets/icons/batata.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -12px;
+  left: calc(50% - 20px);
+}
+
+.benefits-title {
+  margin-top: 0;
+  padding-top: 64px;
+}
+
+.benefits-subtitle {
+  color: #808080;
+}
+
+.main-benefits-cards {
+  width: 288px;
+  height: 152px;
+  margin: 1.6rem auto;
+  padding: 1.6rem;
+  background-color: var(--warm-black1);
+  border-radius: .4rem;
+  text-align: start;
+}
+
+.benefits-cards-img {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;  
+}
+
+.img1 {  
+  background-image: url('./Assets/icons/clock.svg');
+}
+
+.img2 {  
+  background-image: url('./Assets/icons/eye.svg');
+}
+
+.img3 {  
+  background-image: url('./Assets/icons/dollar-sign.svg');
+}
+
+.img4 {  
+  background-image: url('./Assets/icons/check-circle.svg');
+}
+
+.benefits-card-title {
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-card-paragraph {
+  color: #808080;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
