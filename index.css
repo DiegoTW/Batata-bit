@@ -11,12 +11,12 @@
   /* Colores */
   --linear-background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
   --bitcoin-orange: #F7931A;
-  --soft-orange: #FFCD9F;
+  --soft-orange: #FFE9D4;
   --secondary-blue: #1A9AF7;
   --soft-blue: #E7F5FF;
   --warm-black: #201E1C;
   --warm-black1: #282623;
-  --grey: #BABABA;
+  --grey: #B5B0AB;
   --off-white: #FAF8F7;
   --white: #FFFFFF;
 
@@ -53,6 +53,15 @@ html {
   font-family: var(--font-DmSans);
 }
 
+main {
+  width: 100vw;
+  min-width: 320px;
+  text-align: center;
+  background-color: var(--off-white);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
 .header-container {
   width: 100vw;
   min-width: 320px;
@@ -72,22 +81,25 @@ html {
   margin-bottom: 2rem;
 }
 
-.header-logo-text {
+.header-logo-text,
+.title-table {
   font-size: var(--textLogo-size);
   color: #F7931A;
   font-weight: var(--weight-700);
 }
 
-.header-title {
-  width: 280px;
+.header-title,
+.exchange-title {
+  width: 288px;
   font-size: var(--h1-size);
   color: var(--white);
   margin: 2rem auto;
   line-height: var(--h1-height);
 }
 
-.header-subtitle {
-  width: 280px;
+.header-subtitle,
+.exchange-subtitle {
+  width: 288px;
   font-size: var(--p-size);
   font-weight: var(--weight-500);
   line-height: var(--p-height);
@@ -108,4 +120,75 @@ html {
   bottom: -2rem;
   left: calc(50% - 125px);
   right: -4rem;
+}
+
+.backgroundImg {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 3rem;
+  background-image: url("./Assets/img/bitcoin.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exchange-title {
+  color: var(--warm-black);
+}
+
+.exchange-subtitle {
+  color: #757575;
+  font-size: 14px;;
+}
+
+.main-table-container {
+  width: 70%;
+  min-width: 235px;
+  max-width: 300px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: var(--font-Inter);
+}
+
+.title-table {
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
+  font-size: 1.8rem;
+}
+
+.info-table {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 180px;
+  margin: 0 auto 2.5rem;
+  padding: 0 2rem;
+}
+
+.info-table td {
+  width: 50%;
+  font-size: 1.8rem;
+}
+
+.table-column-left {
+  color: var(--grey);
+}
+
+.table-column-right {
+  font-weight: 300;
+  color: #757575;
+}
+
+.info-actualization {
+  width: 170px;
+  height: 32px;
+  margin: 0 auto;
+  background-color: var(--soft-orange);
+  color: var(--warm-black);
+  border-radius: .8rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding: .8rem;
 }
