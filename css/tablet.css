@@ -1,0 +1,19 @@
+.main-table-container {
+  display: flex;
+}
+.main-benefits-container {
+  height: auto;
+}
+.main-benefits-cards {  
+  margin: 6.6rem auto;
+}
+.main-photo-container {
+  background-image: url('../Assets/img/bitcoinbaby2x.webp');
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.plans-card-container {
+  justify-content: center;
+}
